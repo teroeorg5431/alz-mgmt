@@ -1,0 +1,6 @@
+default_location             = "swedencentral"
+root_id                      = "essi"
+root_name                    = "iso-skaala"
+subscription_id_connectivity = "b80f5926-e159-4dc2-9c5f-620afcc59870"
+subscription_id_identity     = "b80f5926-e159-4dc2-9c5f-620afcc59870"
+subscription_id_management   = "b80f5926-e159-4dc2-9c5f-620afcc59870"
