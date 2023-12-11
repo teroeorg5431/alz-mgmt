@@ -12,15 +12,15 @@ module "enterprise-scale" {
   default_location = var.default_location
   root_parent_id   = data.azurerm_client_config.core.tenant_id
 
-  deploy_corp_landing_zones    = true
-  deploy_management_resources  = true
-  deploy_online_landing_zones  = true
+  deploy_corp_landing_zones     = true
+  deploy_management_resources   = true
+  deploy_online_landing_zones   = true
   deploy_connectivity_resources = true
-  root_id                      = var.root_id
-  root_name                    = var.root_name
-  subscription_id_connectivity = var.subscription_id_connectivity
-  subscription_id_identity     = var.subscription_id_identity
-  subscription_id_management   = var.subscription_id_management
+  root_id                       = var.root_id
+  root_name                     = var.root_name
+  subscription_id_connectivity  = var.subscription_id_connectivity
+  subscription_id_identity      = var.subscription_id_identity
+  subscription_id_management    = var.subscription_id_management
 
   providers = {
     azurerm              = azurerm
@@ -28,7 +28,7 @@ module "enterprise-scale" {
     azurerm.management   = azurerm.management
   }
 
-    # Configure custom settings for the module to deploy Virtual WAN hub
+  # Configure custom settings for the module to deploy Virtual WAN hub
   # network resources instead of traditional hub network resources.
   configure_connectivity_resources = {
     settings = {
@@ -166,5 +166,5 @@ module "enterprise-scale" {
     advanced = null
   }
 
-  
+
 }
